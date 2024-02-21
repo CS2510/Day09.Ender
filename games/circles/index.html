@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Simple Game</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canv">
+    </canvas>
+
+
+    <script src="/engine/Engine.js"></script>
+
+    <script src="/engine/static/Time.js"></script>
+    <script src="/engine/static/Globals.js"></script>
+    <script src="/engine/static/Input.js"></script>
+    <script src="/engine/static/Collisions.js"></script>
+    
+    <script src="/engine/classes/Scene.js"></script>
+    <script src="/engine/classes/GameObject.js"></script>
+    <script src="/engine/classes/Component.js"></script>
+
+    <script src="/engine/components/Transform.js"></script>
+    <script src="/engine/components/Circle.js"></script>
+    <script src="/engine/components/KeyboardMovement.js"></script>
+
+    <script src="./game-objects/ScoreGameObject.js"></script>
+    <script src="./game-objects/CircleGameObject.js"></script>
+    <script src="./game-objects/ScoreUpdaterGameObject.js"></script>
+    <script src="./game-objects/DeathTextGameObject.js"></script>
+    <script src="./game-objects/EndSceneGameObject.js"></script>
+    <script src="./game-objects/KillerGameObject.js"></script>
+    <script src="./game-objects/ControllerGameObject.js"></script>
+
+    <script src="./scenes/MainScene.js"></script>
+    <script src="./scenes/DeathScene.js"></script>
+
+    <script src="./components/DeathTestComponent.js"></script>
+    <script src="./components/ControllerComponent.js"></script>
+
+    <script>
+        //Globals.score = 0;
+        let currentScene = new MainScene();
+        Engine.setup()
+    </script>
+</body>
+
+</html>
